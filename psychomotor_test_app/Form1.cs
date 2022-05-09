@@ -16,5 +16,11 @@ namespace psychomotor_test_app
         {
             InitializeComponent();
         }
+
+        private void buttonTest1_Click(object sender, EventArgs e)
+        {
+            Form2 form_test_1 = new Form2();
+            form_test_1.ShowDialog();
+        }
     }
 }
