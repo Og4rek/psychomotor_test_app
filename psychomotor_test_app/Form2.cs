@@ -7,17 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace psychomotor_test_app
 {
     public partial class Form2 : Form
     {
         int counter = 0;
+        Stopwatch stopwatch = new Stopwatch();
         public Form2()
         {
             InitializeComponent();
         }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g_0 = this.panel1.CreateGraphics();
@@ -50,9 +51,9 @@ namespace psychomotor_test_app
             Pen p = new Pen(Color.Black);
             g_0.DrawEllipse(p, 0, 0, 100, 100);
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
+            button1.Enabled = false;
             timer1.Interval = 1000;
             timer1.Start();
         }
@@ -90,6 +91,7 @@ namespace psychomotor_test_app
                     g_5.FillEllipse(redBrush, 0, 0, 100, 100);
                     break;
                 case 7:
+                    stopwatch.Start();
                     g_1.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_2.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_3.FillEllipse(whiteBrush, 0, 0, 100, 100);
@@ -101,6 +103,15 @@ namespace psychomotor_test_app
             }
 
             counter++;
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space)
+            {
+                stopwatch.Stop();
+                textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
+            }
         }
     }
 }
