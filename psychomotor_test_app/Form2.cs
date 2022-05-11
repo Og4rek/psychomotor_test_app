@@ -118,7 +118,6 @@ namespace psychomotor_test_app
             counter++;
             if (space_pressed == true)
             {
-                button2.Enabled = true;
                 counter = 0;
                 timer1.Stop();
             }
@@ -129,6 +128,7 @@ namespace psychomotor_test_app
             {
                 stopwatch.Stop();
                 textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
+                button2.Enabled = true;
                 textBox2.Enabled = false;
                 space_pressed = true;
                 zgaszone = false;
@@ -136,8 +136,9 @@ namespace psychomotor_test_app
                 {
                     string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds);
                     File.AppendAllText("results.txt", test1_result);
+                    b_click = false;
+                    button2.Enabled = false;
                 }
-                b_click = false;
             }
         }
     }
