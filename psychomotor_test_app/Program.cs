@@ -15,6 +15,14 @@ using System.Windows.Forms;
     test 3 - dzwiek i reakcja 
     test 4 - rozny dzwiek i rozne przyciski trzeba klikac 
     test 5 - matryca swiatelek
+
+    do test 1 dodac obsluge prawdziwego testu i zapysywac do pliku
+    do testu 2 liczyc czas sredni i calkowity i zapystwac do pliku
+    do testu 3 liczyc czas i zrobic ten dzwiek i wyswietlanie
+    do testu 4 wgrac 3 rozne dzwieki i liczyc czas
+    matryca swiatelek te swiatelka zrobic i ierzyc czas i poprawnosc wcisnieia
+
+
  */
 namespace psychomotor_test_app
 {

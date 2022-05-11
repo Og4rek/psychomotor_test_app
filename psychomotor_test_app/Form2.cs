@@ -60,7 +60,7 @@ namespace psychomotor_test_app
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            // do zrobienia wlasciwy test i zapis wyniku do pliku
         }
 
         private void timer1_Tick(object sender, EventArgs e)
