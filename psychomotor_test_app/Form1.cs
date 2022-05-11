@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace psychomotor_test_app
 {
@@ -15,8 +16,9 @@ namespace psychomotor_test_app
         public Form1()
         {
             InitializeComponent();
+            string text1 = "";
+            File.WriteAllText("results.txt", text1);
         }
-
         private void buttonTest1_Click(object sender, EventArgs e)
         {
             Form2 form_test_1 = new Form2();

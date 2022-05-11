@@ -8,12 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Threading;
+using System.IO;
 
 namespace psychomotor_test_app
 {
     public partial class Form2 : Form
     {
         int counter = 0;
+        bool space_pressed = false;
+        bool zgaszone = false;
+        bool b_click = false;
+        Random rnd = new Random();
         Stopwatch stopwatch = new Stopwatch();
         public Form2()
         {
@@ -53,6 +59,7 @@ namespace psychomotor_test_app
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            stopwatch = new Stopwatch();
             button1.Enabled = false;
             timer1.Interval = 1000;
             timer1.Start();
@@ -60,7 +67,14 @@ namespace psychomotor_test_app
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // do zrobienia wlasciwy test i zapis wyniku do pliku
+            b_click = true;
+            textBox2.Enabled = true;
+            textBox2.Text = "";
+            stopwatch = new Stopwatch();
+            button2.Enabled = false;
+            space_pressed = false;
+            timer1.Interval = 1000;
+            timer1.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -89,28 +103,41 @@ namespace psychomotor_test_app
                     break;
                 case 5:
                     g_5.FillEllipse(redBrush, 0, 0, 100, 100);
-                    break;
-                case 7:
-                    stopwatch.Start();
+                    Thread.Sleep(rnd.Next(1500, 3000));
                     g_1.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_2.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_3.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_4.FillEllipse(whiteBrush, 0, 0, 100, 100);
                     g_5.FillEllipse(whiteBrush, 0, 0, 100, 100);
+                    zgaszone = true;
+                    stopwatch.Start();
                     break;
                 default:
                     break;
             }
-
             counter++;
+            if (space_pressed == true)
+            {
+                button2.Enabled = true;
+                counter = 0;
+                timer1.Stop();
+            }
         }
-
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.Space && zgaszone)
             {
                 stopwatch.Stop();
                 textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
+                textBox2.Enabled = false;
+                space_pressed = true;
+                zgaszone = false;
+                if (b_click)
+                {
+                    string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds);
+                    File.AppendAllText("results.txt", test1_result);
+                }
+                b_click = false;
             }
         }
     }

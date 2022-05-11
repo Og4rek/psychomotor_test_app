@@ -37,9 +37,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox_sredniczas = new System.Windows.Forms.TextBox();
             this.textBox_calkowityczas = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -60,6 +58,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(63, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 61);
@@ -70,6 +69,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Enabled = false;
             this.button2.Location = new System.Drawing.Point(144, 172);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 61);
@@ -80,6 +80,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Enabled = false;
             this.button3.Location = new System.Drawing.Point(225, 172);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 61);
@@ -90,6 +91,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.Enabled = false;
             this.button4.Location = new System.Drawing.Point(306, 172);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 61);
@@ -100,6 +102,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
+            this.button5.Enabled = false;
             this.button5.Location = new System.Drawing.Point(387, 172);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 61);
@@ -110,6 +113,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Enabled = false;
             this.button6.Location = new System.Drawing.Point(468, 172);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 61);
@@ -120,6 +124,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Enabled = false;
             this.button7.Location = new System.Drawing.Point(549, 172);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 61);
@@ -130,6 +135,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.White;
+            this.button8.Enabled = false;
             this.button8.Location = new System.Drawing.Point(630, 172);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 61);
@@ -137,33 +143,17 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button_color_Click);
             // 
-            // textBox_sredniczas
-            // 
-            this.textBox_sredniczas.Location = new System.Drawing.Point(306, 285);
-            this.textBox_sredniczas.Name = "textBox_sredniczas";
-            this.textBox_sredniczas.Size = new System.Drawing.Size(100, 20);
-            this.textBox_sredniczas.TabIndex = 11;
-            // 
             // textBox_calkowityczas
             // 
-            this.textBox_calkowityczas.Location = new System.Drawing.Point(306, 332);
+            this.textBox_calkowityczas.Location = new System.Drawing.Point(345, 284);
             this.textBox_calkowityczas.Name = "textBox_calkowityczas";
             this.textBox_calkowityczas.Size = new System.Drawing.Size(100, 20);
             this.textBox_calkowityczas.TabIndex = 12;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(119, 288);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Średni czas nacisniecia przycisku";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(179, 335);
+            this.label2.Location = new System.Drawing.Point(234, 287);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 14;
@@ -188,7 +178,7 @@
             this.button10.TabIndex = 16;
             this.button10.Text = "Właściwy test";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.button_color_Click);
             // 
             // Form3
             // 
@@ -198,9 +188,7 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_calkowityczas);
-            this.Controls.Add(this.textBox_sredniczas);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -212,6 +200,7 @@
             this.Controls.Add(this.textBoxtest2);
             this.Name = "Form3";
             this.Text = "Form3";
+            this.Click += new System.EventHandler(this.button_color_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,9 +217,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TextBox textBox_sredniczas;
         private System.Windows.Forms.TextBox textBox_calkowityczas;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
