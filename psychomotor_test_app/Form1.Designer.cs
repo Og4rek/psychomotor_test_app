@@ -34,7 +34,6 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.textBoxMenu = new System.Windows.Forms.TextBox();
-            this.buttonTest5 = new System.Windows.Forms.Button();
             this.buttonTest4 = new System.Windows.Forms.Button();
             this.buttonTest3 = new System.Windows.Forms.Button();
             this.buttonTest2 = new System.Windows.Forms.Button();
@@ -42,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonTest1
@@ -93,16 +91,6 @@
             this.textBoxMenu.Size = new System.Drawing.Size(273, 98);
             this.textBoxMenu.TabIndex = 9;
             this.textBoxMenu.Text = resources.GetString("textBoxMenu.Text");
-            // 
-            // buttonTest5
-            // 
-            this.buttonTest5.Location = new System.Drawing.Point(15, 274);
-            this.buttonTest5.Name = "buttonTest5";
-            this.buttonTest5.Size = new System.Drawing.Size(75, 23);
-            this.buttonTest5.TabIndex = 10;
-            this.buttonTest5.Text = "Test 5";
-            this.buttonTest5.UseVisualStyleBackColor = true;
-            this.buttonTest5.Click += new System.EventHandler(this.buttonTest5_Click);
             // 
             // buttonTest4
             // 
@@ -170,21 +158,11 @@
             this.label4.TabIndex = 17;
             this.label4.Text = "label4";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(96, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "label5";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(306, 310);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -192,7 +170,6 @@
             this.Controls.Add(this.buttonTest2);
             this.Controls.Add(this.buttonTest3);
             this.Controls.Add(this.buttonTest4);
-            this.Controls.Add(this.buttonTest5);
             this.Controls.Add(this.textBoxMenu);
             this.Controls.Add(this.buttonReset);
             this.Controls.Add(this.buttonSave);
@@ -211,7 +188,6 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.TextBox textBoxMenu;
-        private System.Windows.Forms.Button buttonTest5;
         private System.Windows.Forms.Button buttonTest4;
         private System.Windows.Forms.Button buttonTest3;
         private System.Windows.Forms.Button buttonTest2;
@@ -219,7 +195,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
     }
 }
 

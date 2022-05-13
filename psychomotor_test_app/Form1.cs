@@ -39,14 +39,8 @@ namespace psychomotor_test_app
 
         private void buttonTest4_Click(object sender, EventArgs e)
         {
-            Form5 form_test_4 = new Form5();
+            Form6 form_test_4 = new Form6();
             form_test_4.ShowDialog();
-        }
-
-        private void buttonTest5_Click(object sender, EventArgs e)
-        {
-            Form6 form_test_5 = new Form6();
-            form_test_5.ShowDialog();
         }
     }
 }

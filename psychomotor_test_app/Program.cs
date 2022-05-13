@@ -13,16 +13,19 @@ using System.Windows.Forms;
     test 1 - swiatelka f1
     test 2 - rozne swiatelka zapalane i trzeba w nie klikac
     test 3 - dzwiek i reakcja 
-    test 4 - rozny dzwiek i rozne przyciski trzeba klikac 
-    test 5 - matryca swiatelek
-
-    do test 1 dodac obsluge prawdziwego testu i zapysywac do pliku
-    do testu 2 liczyc czas sredni i calkowity i zapystwac do pliku
-    do testu 3 liczyc czas i zrobic ten dzwiek i wyswietlanie
-    do testu 4 wgrac 3 rozne dzwieki i liczyc czas
-    matryca swiatelek te swiatelka zrobic i ierzyc czas i poprawnosc wcisnieia
-
-
+    test 4 - matryca swiatelek
+    
+    TO DO:
+    WSZEDZIE LADNE NAPISY ZROBIC I OPISAC WSZYSTKO
+    test 1 - po instrukcji ma nie wyswietla sie czas
+    test 2 - po instrukcji ma nie wyswietla sie czas
+    test 3 - po instrukcji ma nie wyswietla sie czas
+    test 4 - 
+                1) dodac dzwiek z kazda zmiana kolorkow
+                2) zrobic ograniczenie na kilka klikniec 5 chyba bedzie git
+                3) zapis do pliku wyniku
+                4) obsluga pruby i faktycznego testu
+                5) sprawdzanie poprawnosci wcisniecia
  */
 namespace psychomotor_test_app
 {
