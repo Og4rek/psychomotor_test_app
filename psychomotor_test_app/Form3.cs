@@ -99,7 +99,7 @@ namespace psychomotor_test_app
                 else
                 {
                     textBox_calkowityczas.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
-                    string test1_result = "Test2: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "\n";
+                    string test1_result = "Test2: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms\n";
                     File.AppendAllText("results.txt", test1_result);
                 }
                 b_click = false;

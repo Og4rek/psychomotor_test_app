@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonTest1 = new System.Windows.Forms.Button();
             this.buttonResults = new System.Windows.Forms.Button();
-            this.buttonSave = new System.Windows.Forms.Button();
             this.buttonReset = new System.Windows.Forms.Button();
             this.textBoxMenu = new System.Windows.Forms.TextBox();
             this.buttonTest4 = new System.Windows.Forms.Button();
@@ -57,28 +56,21 @@
             // 
             this.buttonResults.Location = new System.Drawing.Point(15, 116);
             this.buttonResults.Name = "buttonResults";
-            this.buttonResults.Size = new System.Drawing.Size(75, 23);
+            this.buttonResults.Size = new System.Drawing.Size(127, 23);
             this.buttonResults.TabIndex = 6;
             this.buttonResults.Text = "Results";
             this.buttonResults.UseVisualStyleBackColor = true;
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.Location = new System.Drawing.Point(114, 116);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
-            this.buttonSave.TabIndex = 7;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonResults.Click += new System.EventHandler(this.buttonResults_Click);
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(213, 116);
+            this.buttonReset.Location = new System.Drawing.Point(148, 116);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(75, 23);
+            this.buttonReset.Size = new System.Drawing.Size(127, 23);
             this.buttonReset.TabIndex = 8;
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = true;
+            this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
             // textBoxMenu
             // 
@@ -172,7 +164,6 @@
             this.Controls.Add(this.buttonTest4);
             this.Controls.Add(this.textBoxMenu);
             this.Controls.Add(this.buttonReset);
-            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonResults);
             this.Controls.Add(this.buttonTest1);
             this.Name = "Form1";
@@ -185,7 +176,6 @@
         #endregion
         private System.Windows.Forms.Button buttonTest1;
         private System.Windows.Forms.Button buttonResults;
-        private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonReset;
         private System.Windows.Forms.TextBox textBoxMenu;
         private System.Windows.Forms.Button buttonTest4;

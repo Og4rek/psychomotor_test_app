@@ -134,7 +134,7 @@ namespace psychomotor_test_app
                 zgaszone = false;
                 if (b_click)
                 {
-                    string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "\n";
+                    string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms\n";
                     textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
                     File.AppendAllText("results.txt", test1_result);
                     b_click = false;

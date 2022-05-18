@@ -42,5 +42,24 @@ namespace psychomotor_test_app
             Form6 form_test_4 = new Form6();
             form_test_4.ShowDialog();
         }
+
+        private void buttonResults_Click(object sender, EventArgs e)
+        {
+            string file_name = "results.txt";
+            if (File.Exists(file_name))
+            {
+                StreamReader streamReader = new StreamReader(file_name);
+                MessageBox.Show(streamReader.ReadToEnd());
+                streamReader.Close();
+            }
+            else
+                MessageBox.Show("File read error!");
+        }
+
+        private void buttonReset_Click(object sender, EventArgs e)
+        {
+            string text1 = "";
+            File.WriteAllText("results.txt", text1);
+        }
     }
 }

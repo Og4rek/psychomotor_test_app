@@ -67,7 +67,7 @@ namespace psychomotor_test_app
                 {
                     textBox1.Text = Convert.ToString(sum_of_time / 5) + "ms";
                     textBox1.Enabled = false;
-                    string test1_result = "Test3: " + Convert.ToString(sum_of_time/5) + "\n";
+                    string test1_result = "Test3: " + Convert.ToString(sum_of_time/5) + "ms\n";
                     File.AppendAllText("results.txt", test1_result);
                     b_click = false;
                     button1.Enabled = false;

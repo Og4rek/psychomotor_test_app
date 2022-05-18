@@ -20,6 +20,7 @@ namespace psychomotor_test_app
         int counter = 0;
         int x = 0;
         int y = 0;
+        int liczba_bledow = 0;
         bool button_result = false;
         public Form6()
         {
@@ -50,8 +51,9 @@ namespace psychomotor_test_app
             g_1.FillEllipse(whiteBrush, 8, 8, 9, 9); g_2.FillEllipse(whiteBrush, 8, 8, 9, 9); g_3.FillEllipse(whiteBrush, 8, 8, 9, 9); g_4.FillEllipse(whiteBrush, 8, 8, 9, 9); g_5.FillEllipse(whiteBrush, 8, 8, 9, 9);
             g_6.FillEllipse(whiteBrush, 8, 8, 9, 9); g_7.FillEllipse(whiteBrush, 8, 8, 9, 9); g_8.FillEllipse(whiteBrush, 8, 8, 9, 9); g_9.FillEllipse(whiteBrush, 8, 8, 9, 9); g_10.FillEllipse(whiteBrush, 8, 8, 9, 9);
         }
-        private void color_lights()
+        private void color_lights(Button button)
         {
+            Console.Beep();
             SolidBrush redBrush = new SolidBrush(Color.Red);
             SolidBrush whiteBrush = new SolidBrush(Color.White);
             Graphics g_1 = this.panel1.CreateGraphics();
@@ -67,6 +69,12 @@ namespace psychomotor_test_app
 
             g_1.FillEllipse(whiteBrush, 8, 8, 9, 9); g_2.FillEllipse(whiteBrush, 8, 8, 9, 9); g_3.FillEllipse(whiteBrush, 8, 8, 9, 9); g_4.FillEllipse(whiteBrush, 8, 8, 9, 9); g_5.FillEllipse(whiteBrush, 8, 8, 9, 9);
             g_6.FillEllipse(whiteBrush, 8, 8, 9, 9); g_7.FillEllipse(whiteBrush, 8, 8, 9, 9); g_8.FillEllipse(whiteBrush, 8, 8, 9, 9); g_9.FillEllipse(whiteBrush, 8, 8, 9, 9); g_10.FillEllipse(whiteBrush, 8, 8, 9, 9);
+
+            string xy = Convert.ToString(y+1) + Convert.ToString(x+1);
+
+            if (button.Name.Length == 3)
+                if (button.Name != "b" + xy)
+                    liczba_bledow++;
 
             // dioda x
             x = rnd.Next(0, 5);
@@ -138,7 +146,7 @@ namespace psychomotor_test_app
                 color_white_lights();
                 Thread.Sleep(2000);
                 stopwatch.Start();
-                color_lights();
+                color_lights(button);
             }
             else if (button.Name == "button2")
             {
@@ -146,13 +154,13 @@ namespace psychomotor_test_app
                 button_enabled();
                 Thread.Sleep(2000);
                 stopwatch.Start();
-                color_lights();
+                color_lights(button);
             }
             else
             {
                 if (counter < 11)
                 {
-                    color_lights();
+                    color_lights(button);
                 }
                 else
                 {
@@ -160,9 +168,9 @@ namespace psychomotor_test_app
                     button_disable();
                     if (button_result)
                     {
-                        textBox1.Text = "Liczba bledow";
+                        textBox1.Text = Convert.ToString(liczba_bledow);
                         textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
-                        string test1_result = "Test4: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "\n";
+                        string test1_result = "Test4: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms\n";
                         File.AppendAllText("results.txt", test1_result);
                         textBox1.Enabled = false;
                         textBox2.Enabled = false;
@@ -174,6 +182,7 @@ namespace psychomotor_test_app
                         button1.Enabled = true;
                     }
                     counter = 0;
+                    liczba_bledow = 0;
                 }
             }
         }
