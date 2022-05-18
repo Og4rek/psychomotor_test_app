@@ -147,7 +147,7 @@
             // 
             this.textBox_calkowityczas.Location = new System.Drawing.Point(345, 284);
             this.textBox_calkowityczas.Name = "textBox_calkowityczas";
-            this.textBox_calkowityczas.Size = new System.Drawing.Size(100, 20);
+            this.textBox_calkowityczas.Size = new System.Drawing.Size(145, 20);
             this.textBox_calkowityczas.TabIndex = 12;
             // 
             // label2

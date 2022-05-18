@@ -55,15 +55,19 @@ namespace psychomotor_test_app
                     play_sound();
                 else
                 {
-                    textBox1.Text = Convert.ToString(sum_of_time / 5);
-                    sum_of_time = 0;
+                    if (b_click == false) 
+                    { 
+                        textBox1.Text = "Szkolenie wykonane!";
+                        sum_of_time = 0;
+                    }   
                     button1.Enabled = true;
                     counter = 0;
                 }
                 if (b_click && counter == 0)
                 {
+                    textBox1.Text = Convert.ToString(sum_of_time / 5) + "ms";
                     textBox1.Enabled = false;
-                    string test1_result = "Test3: " + Convert.ToString(sum_of_time/5);
+                    string test1_result = "Test3: " + Convert.ToString(sum_of_time/5) + "\n";
                     File.AppendAllText("results.txt", test1_result);
                     b_click = false;
                     button1.Enabled = false;

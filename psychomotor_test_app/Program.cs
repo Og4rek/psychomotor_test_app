@@ -16,10 +16,7 @@ using System.Windows.Forms;
     test 4 - matryca swiatelek
     
     TO DO:
-    WSZEDZIE LADNE NAPISY ZROBIC I OPISAC WSZYSTKO
-    test 1 - po instrukcji ma nie wyswietla sie czas
-    test 2 - po instrukcji ma nie wyswietla sie czas
-    test 3 - po instrukcji ma nie wyswietla sie czas
+    WSZEDZIE LADNE NAPISY ZROBIC I OPISAC WSZYSTKO Wyswietlac wyniki i resetowac
     test 4 - 
                 1) dodac dzwiek z kazda zmiana kolorkow
                 2) zrobic ograniczenie na kilka klikniec 5 chyba bedzie git

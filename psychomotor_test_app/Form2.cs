@@ -127,14 +127,15 @@ namespace psychomotor_test_app
             if (e.KeyCode == Keys.Space && zgaszone)
             {
                 stopwatch.Stop();
-                textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
+                textBox2.Text = "Szkolenie wykonane!";
                 button2.Enabled = true;
                 textBox2.Enabled = false;
                 space_pressed = true;
                 zgaszone = false;
                 if (b_click)
                 {
-                    string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds);
+                    string test1_result = "Test1: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "\n";
+                    textBox2.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
                     File.AppendAllText("results.txt", test1_result);
                     b_click = false;
                     button2.Enabled = false;

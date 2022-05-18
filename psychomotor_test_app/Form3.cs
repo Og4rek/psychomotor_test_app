@@ -92,14 +92,17 @@ namespace psychomotor_test_app
                 stopwatch.Stop();
                 button.BackColor = Color.White;
                 if (!b_click)
+                {
+                    textBox_calkowityczas.Text = "Szkolenie wykonane!";
                     button10.Enabled = true;
+                }
                 else
                 {
-                    string test1_result = "Test2: " + Convert.ToString(stopwatch.ElapsedMilliseconds);
+                    textBox_calkowityczas.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
+                    string test1_result = "Test2: " + Convert.ToString(stopwatch.ElapsedMilliseconds) + "\n";
                     File.AppendAllText("results.txt", test1_result);
                 }
                 b_click = false;
-                textBox_calkowityczas.Text = Convert.ToString(stopwatch.ElapsedMilliseconds) + "ms";
                 textBox_calkowityczas.Enabled = false;
                 counter = 0;
                 button1.Enabled = false; button2.Enabled = false; button3.Enabled = false; button4.Enabled = false;
