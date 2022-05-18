@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBoxtest2.Text" xml:space="preserve">
+    <value>Zostanie zapalonych dziesięć razy rożnych przycisków. Zadaniem jest jak najszybsze nacisniecie przycisku poprzez najechanie na niego myszką. Najpierw zostanie wykonana próba tesotwa mająca na celu zaznajomić badanego z działniem programu, następnie zostanie przeprowadzony właściwy test i wyswietli się czas w jakim zadanie zostało wykonane.</value>
+  </data>
 </root>

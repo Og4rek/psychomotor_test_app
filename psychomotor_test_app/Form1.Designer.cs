@@ -44,9 +44,9 @@
             // 
             // buttonTest1
             // 
-            this.buttonTest1.Location = new System.Drawing.Point(15, 158);
+            this.buttonTest1.Location = new System.Drawing.Point(80, 193);
             this.buttonTest1.Name = "buttonTest1";
-            this.buttonTest1.Size = new System.Drawing.Size(75, 23);
+            this.buttonTest1.Size = new System.Drawing.Size(91, 23);
             this.buttonTest1.TabIndex = 1;
             this.buttonTest1.Text = "Test 1";
             this.buttonTest1.UseVisualStyleBackColor = true;
@@ -54,21 +54,21 @@
             // 
             // buttonResults
             // 
-            this.buttonResults.Location = new System.Drawing.Point(15, 116);
+            this.buttonResults.Location = new System.Drawing.Point(80, 154);
             this.buttonResults.Name = "buttonResults";
-            this.buttonResults.Size = new System.Drawing.Size(127, 23);
+            this.buttonResults.Size = new System.Drawing.Size(188, 23);
             this.buttonResults.TabIndex = 6;
-            this.buttonResults.Text = "Results";
+            this.buttonResults.Text = "Wyniki";
             this.buttonResults.UseVisualStyleBackColor = true;
             this.buttonResults.Click += new System.EventHandler(this.buttonResults_Click);
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(148, 116);
+            this.buttonReset.Location = new System.Drawing.Point(274, 154);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(127, 23);
+            this.buttonReset.Size = new System.Drawing.Size(188, 23);
             this.buttonReset.TabIndex = 8;
-            this.buttonReset.Text = "Reset";
+            this.buttonReset.Text = "Wyczyść";
             this.buttonReset.UseVisualStyleBackColor = true;
             this.buttonReset.Click += new System.EventHandler(this.buttonReset_Click);
             // 
@@ -77,18 +77,19 @@
             this.textBoxMenu.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxMenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxMenu.Enabled = false;
+            this.textBoxMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxMenu.Location = new System.Drawing.Point(15, 12);
             this.textBoxMenu.Multiline = true;
             this.textBoxMenu.Name = "textBoxMenu";
-            this.textBoxMenu.Size = new System.Drawing.Size(273, 98);
+            this.textBoxMenu.Size = new System.Drawing.Size(562, 126);
             this.textBoxMenu.TabIndex = 9;
             this.textBoxMenu.Text = resources.GetString("textBoxMenu.Text");
             // 
             // buttonTest4
             // 
-            this.buttonTest4.Location = new System.Drawing.Point(15, 245);
+            this.buttonTest4.Location = new System.Drawing.Point(371, 193);
             this.buttonTest4.Name = "buttonTest4";
-            this.buttonTest4.Size = new System.Drawing.Size(75, 23);
+            this.buttonTest4.Size = new System.Drawing.Size(91, 23);
             this.buttonTest4.TabIndex = 11;
             this.buttonTest4.Text = "Test 4";
             this.buttonTest4.UseVisualStyleBackColor = true;
@@ -96,9 +97,9 @@
             // 
             // buttonTest3
             // 
-            this.buttonTest3.Location = new System.Drawing.Point(15, 216);
+            this.buttonTest3.Location = new System.Drawing.Point(275, 193);
             this.buttonTest3.Name = "buttonTest3";
-            this.buttonTest3.Size = new System.Drawing.Size(75, 23);
+            this.buttonTest3.Size = new System.Drawing.Size(91, 23);
             this.buttonTest3.TabIndex = 12;
             this.buttonTest3.Text = "Test 3";
             this.buttonTest3.UseVisualStyleBackColor = true;
@@ -106,9 +107,9 @@
             // 
             // buttonTest2
             // 
-            this.buttonTest2.Location = new System.Drawing.Point(15, 187);
+            this.buttonTest2.Location = new System.Drawing.Point(177, 193);
             this.buttonTest2.Name = "buttonTest2";
-            this.buttonTest2.Size = new System.Drawing.Size(75, 23);
+            this.buttonTest2.Size = new System.Drawing.Size(91, 23);
             this.buttonTest2.TabIndex = 13;
             this.buttonTest2.Text = "Test 2";
             this.buttonTest2.UseVisualStyleBackColor = true;
@@ -117,44 +118,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(96, 163);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(11, 240);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(341, 20);
             this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
+            this.label1.Text = "Test 1 - Szybkość reakcji po zgaśnięciu świateł.";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 192);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(11, 269);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(512, 20);
             this.label2.TabIndex = 15;
-            this.label2.Text = "label2";
+            this.label2.Text = "Test 2 - Szybkość reakcji na zapalające sie światła ustawione w rzędzie.";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(96, 221);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(11, 298);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(348, 20);
             this.label3.TabIndex = 16;
-            this.label3.Text = "label3";
+            this.label3.Text = "Test 3 - Szybkość reakcji po usłyszeniu dzwieku.";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(96, 250);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.Location = new System.Drawing.Point(11, 328);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(552, 20);
             this.label4.TabIndex = 17;
-            this.label4.Text = "label4";
+            this.label4.Text = "Test 4 - Szybkość reakcji i poprawność z wykożystaniem aparatu krzyżowego.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 310);
+            this.ClientSize = new System.Drawing.Size(596, 369);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

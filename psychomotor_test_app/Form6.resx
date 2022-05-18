@@ -117,4 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBoxtest2.Text" xml:space="preserve">
+    <value>Zostaną zapalone dwa światełka jedno na osi poziomej a drugie na osi pionowej. Zadanie polega na naciskaniu na przycisk o odpowiednich współrzędnych które określone są przez zapalające się diody. Należy wybrać przycisk który leży w wierszu i kolumnie gdzie zapalone są diody. Najpierw zostanie przeprowadzona faza szkoleniowa, a nastepnie po przyciśnieciu przycisku 'Właściwy test' zostanie zmierzony czas oraz liczba źle nacisniętych przycisków.</value>
+  </data>
 </root>

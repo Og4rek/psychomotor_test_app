@@ -66,9 +66,9 @@ namespace psychomotor_test_app
         private void button_color_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            if (button.Text == "Właściwy test")
+            if (button.Name == "button10")
                 b_click = true;
-            if (button.Text == "Proba" || button.Text == "Właściwy test")
+            if (button.Name == "button9" || button.Name == "button10")
             {
                 button1.Enabled = true; button2.Enabled = true; button3.Enabled = true; button4.Enabled = true;
                 button5.Enabled = true; button6.Enabled = true; button7.Enabled = true; button8.Enabled = true;

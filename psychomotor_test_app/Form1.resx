@@ -118,12 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBoxMenu.Text" xml:space="preserve">
-    <value>Hello! this is an app to evaluate your psychomotor skills.
-If you wont:
-1) View the results - click Results.
-2) Save the results - click Save.
-3) Reset the test and results - click Reset.
-4) Exit - click the X in the upper right corner.
-5) Do the test - click the button from "Test 1" to "Test 5".</value>
+    <value>Witaj! Ta aplikacja sprawdza twój czas reakcji na bodźce wzrokowe i dziwkowe.
+MENU:
+1) WYSWIETLENIE WYNIKÓW - przycisk 'Wyniki'.
+2) WYCZYSZCZENIE WYNIKÓW - przycisk 'Wyczyść'.
+3) WYJSCIE Z PROGRAMU - przycisk 'x' w prawym górnym rogu.
+4) WYKONANIE TESÓW - przyciski od 'Test 1' do 'Test 4'.</value>
   </data>
 </root>

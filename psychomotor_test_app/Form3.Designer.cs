@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.textBoxtest2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -48,12 +49,13 @@
             this.textBoxtest2.BackColor = System.Drawing.SystemColors.Control;
             this.textBoxtest2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxtest2.Enabled = false;
+            this.textBoxtest2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxtest2.Location = new System.Drawing.Point(12, 12);
             this.textBoxtest2.Multiline = true;
             this.textBoxtest2.Name = "textBoxtest2";
-            this.textBoxtest2.Size = new System.Drawing.Size(523, 49);
+            this.textBoxtest2.Size = new System.Drawing.Size(776, 81);
             this.textBoxtest2.TabIndex = 2;
-            this.textBoxtest2.Text = "text";
+            this.textBoxtest2.Text = resources.GetString("textBoxtest2.Text");
             // 
             // button1
             // 
@@ -145,34 +147,37 @@
             // 
             // textBox_calkowityczas
             // 
-            this.textBox_calkowityczas.Location = new System.Drawing.Point(345, 284);
+            this.textBox_calkowityczas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox_calkowityczas.Location = new System.Drawing.Point(225, 314);
             this.textBox_calkowityczas.Name = "textBox_calkowityczas";
-            this.textBox_calkowityczas.Size = new System.Drawing.Size(145, 20);
+            this.textBox_calkowityczas.Size = new System.Drawing.Size(318, 26);
             this.textBox_calkowityczas.TabIndex = 12;
+            this.textBox_calkowityczas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(234, 287);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(313, 291);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 13);
+            this.label2.Size = new System.Drawing.Size(153, 20);
             this.label2.TabIndex = 14;
             this.label2.Text = "Całkowity czas testu";
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(144, 128);
+            this.button9.Location = new System.Drawing.Point(63, 128);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(156, 23);
             this.button9.TabIndex = 15;
-            this.button9.Text = "Proba";
+            this.button9.Text = "Próba";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button_color_Click);
             // 
             // button10
             // 
             this.button10.Enabled = false;
-            this.button10.Location = new System.Drawing.Point(468, 128);
+            this.button10.Location = new System.Drawing.Point(225, 128);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(156, 23);
             this.button10.TabIndex = 16;
@@ -184,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 365);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label2);
